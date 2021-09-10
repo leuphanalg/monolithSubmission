@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <!-- troubleShoot for Error with Permissions-Policy header
+    : Unrecognized feature: 'interest-cohort'-->
+    <permissions-policy: interest-cohort=()>
+    <chrome_options.add_argument('--log-level=1')>
+    <!-- troubleShootEnds -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBLYSK1BS6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QBLYSK1BS6');
+    </script>
+    Global site tag (gtag.js) - Google Analytics Ends-->
+
+    <!-- semanticUI -->
+    <link rel="stylesheet" type="text/css" href="semantic.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic.js"></script>
+    <!-- semanticUI Ends -->
+
+    <!-- responsiveMenu -->
+    <!--<script>
+    $(function(){
+      $(".dropmenu").click(function(){
+        $(".dropmenu").stop().slideToggle("fast");
+      });
+    });
+    </script>-->
+    <!-- responsiveMenu Ends -->
+
+    <!-- fontelloIcon -->
+    <link rel="stylesheet" href="fontello.css">
+    <!-- fontelloIcon Ends -->
+
+    <!-- style.css-->
+    <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap">
+    <title>Monolith</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- style.css Ends-->
+
+  </head>
+
+  <body>
+
+    <!-- mouseMotion -->
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script>
+    var c1 = new mojs.Shape({
+      shape:"circle",
+      radius:{
+        20:40
+      },
+      stroke:"white",
+      strokeWidth:{
+        20:0
+      },
+      fill:"none",
+      left:0,
+      top:0,
+      duration:200
+    });
+    var ripples = [];
+    var colors = ["skyblue", "cornflowerblue", "gray", "#b5bfff", "white"];
+    for (var i = 0; i < 4; i++){
+      var c2 = new mojs.Shape({
+        parent: c1.el,
+        shape:"circle",
+        radius:{
+          0:"rand(10,30)"
+        },
+        stroke:colors[i],
+        strokeWidth:{
+          10:0
+        },
+        fill:"none",
+        left:"50%",
+        top:"50%",
+        x:"rand(-50, 50)",
+        y:"rand(-50, 50)",
+        delay:100
+      });
+      ripples.push(c2);
+    }
+    document.addEventListener("dblclick", function(e){
+      c1.tune({
+        x:e.pageX,
+        y:e.pageY
+      }).replay();
+      for(var i=0; i<ripples.length; i++){
+        ripples[i].generate().replay();
+      }
+    })
+    </script>
+    <!-- mouseMotion Ends -->
+
+    <!-- monolithLogo -->
+    <a class="thumbnail" title="Monolith Logo"
+    style="background-image:url('monolith-logo.jpg')"
+    align="left" href="index.html"
+    onclick="alert('*⋆.*:･ﾟ☽.:⋆*･ﾟ:.⋆ Warp Home! *⋆.*:･ﾟ☾.:⋆*･ﾟ:.⋆')"></a>
+    <!-- monolithLogo Ends -->
+
+    <!-- logIn or signUp -->
+    <a class="btn cornflowerblue" href="#back-endCoding">Log In</a>
+    <script src=""></script>
+    <a class="btn skyblue" href="#back-endCoding">Sign Up</a>
+    <script src=""></script>
+    <!--<input id="logIn" type="button" value="Log In" onclick="logIn(this);">
+    <input id="signUp" type="button" value="Sign Up" onclick="SignUp(this);">-->
+    <!-- logIn or signUp Ends-->
+
+    <!-- themeMode -->
+    <a input id="darkMode" type="button" class="btn gray"
+    href="#gray" value="Night" onclick="darkMode(this);">Night</a>
+    <!--input id="darkMode" type="button" value="Night" onclick="darkMode(this);">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <!-- themeMode Ends -->
+
+    <!-- menuTab -->
+    <h1><a href="index.html" title="⋆ ゜☁︎ ₊⋆ 。゜☾。⋆ Welcome to Monolith! ⋆ ₊ ﾟ ☽ *。☁︎ ⋆"
+         class="active" id="monolith">Monolith</a></h1>
+    <h2><a href="" onclick="alert('¸¸.•*¨*•♫♪¸¸.•*¨*•♫♪¸Refresh the page?¸.•*¨*•♫♪¸¸.•*¨*•♫♪')">
+         Leuphana Website for Students</a></h2>
+    <script>
+      var menuTab=['Monolith','Blackboard','Maps','Activities','socializing'];
+    </script>
+    <nav id="mainmenu">
+    <div class="dropmenu">
+    <ul>
+      <li><a href="blackboard.html">Blackboard</a></li>
+      <li><a href="maps.html" id="currentMaps">Maps</a>
+      <ul>
+        <li><a href="#upcomingSubmenuFeature">Campus</a></li>
+        <li><a href="#upcomingSubmenuFeature">Lueneburg</a></li>
+        <li><a href="#upcomingSubmenuFeature">Bike Road</a></li>
+        <li><a href="#upcomingSubmenuFeature">Pub Crawls</a></li>
+      </ul>
+      </li>
+        <li><a href="activities.html" id="currentActivities">Activities</a>
+      <ul>
+        <li><a href="#upcomingSubmenuFeature">indoor Activities</a></li>
+        <li><a href="#upcomingSubmenuFeature">outdoor Activities</a></li>
+      </ul>
+        <li><a href="socializing.html" id="currentSocializing">socializing</a>
+      <ul>
+        <li><a href="#upcomingSubmenuFeature">Agora Square</a></li>
+        <li><a href="#upcomingSubmenuFeature">Flea Market</a></li>
+        <li><a href="#upcomingSubmenuFeature">Dormitory</a></li>
+      </ul>
+    </ul>
+    </div>
+    </nav>
+    <!-- menuTab Ends -->
+
+    <!-- tree Practice -->
+       <!--<ul class="tree">
+         <li>
+           <input type="checkbox" id="root">
+           <label for="root">Menu</label>
+           <ul>
+             <li><a href="blackboard.html" target="_blank" title="Info on Leuphana and LG" class="blackboard">Blackboard</a></li>
+             <li>
+               <input type="checkbox" id="node2">
+               <label for="node2">Maps</label>
+               <ul>
+                 <li><a href="maps.html" target="_blank" title="Campus Map">Campus Map</a></li>
+                 <li><a href="maps.html" target="_blank" title="Pub Crawls">Pub Crawls</a></li>
+               </ul>
+             </li>
+             <li>
+               <input type="checkbox" id="node3">
+               <label for="node3">Activities</label>
+              <ul>
+                 <li><a href="activities.html" target="_blank" title="Create Activities">Create Activities</a></li>
+                 <li><a href="activities.html" target="_blank" title="Join Activities">Join Activities</a></li>
+              </ul>
+             </li>
+             <li>
+               <input type="checkbox" id="node4">
+               <label for="node4">Socializing</label>
+               <ul>
+                 <li><a href="socializing.html" target="_blank" title="Create Posts">Create Posts</a></li>
+                 <li><a href="socializing.html" target="_blank" title="Browse Posts">Browse Posts</a></li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+       </ul>-->
+       <!-- tree Practice Ends-->
+
+    <!-- orderedList Mode
+       <ol>
+         <li><a href="blackboard.html" target="_blank" title="Info on Leuphana and LG">Blackboard</a></li>
+         <li><a href="maps.html" target="_blank" title="Campus Map and Pub Crawls">Maps</a></li>
+         <li><a href="activities.html" target="_blank" title="Create and Join Activities">Activities</a></li>
+         <li><a href="socializing.html" target="_blank" title="Create and Browse Posts">Socializing</a></li>
+        </ol>
+       -->
+
+    <!-- maps.htmlContent -->
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script src="mo.js"></script>
+    <p><img src="go.jpg" id="bg2" alt=""></p>
+    <div class="ui text container" align="center">
+
+    <p></p>
+
+    <p>
+      Welcome to <u>Maps</u><br>
+      Where do you wanna <strong>go?</strong><br>
+    </p>
+    <p>
+      <strong><a href="https://www.asta-lueneburg.de/service/semesterticket/?lang=en"
+      >>>>Semester Ticket<<<</a></strong>
+    </p>
+
+    </div><br>
+
+    <p></p>
+
+    <!-- parallaxScrolling -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+    <section class="scene one">
+      <header>
+        <h1>Campus</h1>
+          <a href="https://www.leuphana.de/en/university/maps/campus.html" class="link">╰┈➤ ❝ Let's Go! ❞</a>
+      </header>
+    </section>
+    <section class="scene two">
+      <header>
+        <h1>Lueneburg</h1>
+          <a href="https://www.google.com/maps/place/L%C3%BCneburg/@53.2389717,10.282557,11z/data=!3m1!4b1!4m5!3m4!1s0x47b1ddc58c9ea45b:0xc60006ccd4f4fec3!8m2!3d53.2464214!4d10.4115179" class="link">╰┈➤ ❝ Let's Go! ❞</a>
+      </header>
+    </section>
+    <section class="scene three">
+      <header>
+        <h1>Bike Road</h1>
+          <a href="https://www.lueneburg2030.de/lueneburgmaps/" class="link">╰┈➤ ❝ Let's Go! ❞</a>
+      </header>
+    </section>
+    <section class="scene four">
+      <header>
+        <h1>Pub Crawls</h1>
+          <a href="https://www.lueneburg2030.de/lieblingsplaetze/" class="link">╰┈➤ ❝ Let's Go! ❞</a>
+        </header>
+    </section>
+    <!-- parallaxScrolling Ends -->
+
+    <!-- masonryColumn
+      <div class="columns">
+        <figure>
+          <img src="image/2-1.jpg">
+          <figcaption><a href="https://asta-lueneburg.de/guides/getting-around-campus/">Campus</a></figcaption>
+        </figure>
+        <figure>
+          <img src="image/2-2.jpg">
+          <figcaption><a href="https://www.google.com/maps/place/L%C3%BCneburg/@53.2389717,10.282557,11z/data=!3m1!4b1!4m5!3m4!1s0x47b1ddc58c9ea45b:0xc60006ccd4f4fec3!8m2!3d53.2464214!4d10.4115179">Lueneburg</a></figcaption>
+        </figure>
+        <figure>
+          <img src="image/2-3.jpg" href="https://www.lueneburg2030.de/lueneburgmaps/">
+          <figcaption><a href="https://www.lueneburg2030.de/lueneburgmaps/">Bike Road</a></figcaption>
+        </figure>
+        <figure>
+          <img src="image/2-4.jpg" href="https://www.lueneburg2030.de/lieblingsplaetze/">
+          <figcaption><a href="https://www.lueneburg2030.de/lieblingsplaetze/">Pub Crawls</a></figcaption>
+        </figure>
+      </div>
+        masonryColumn Ends -->
+
+    <!-- maps.htmlContent Ends-->
+
+    <p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/60941ac9b1d5182476b65c6b/1f518h9h3';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    </p>
+    <!--</div>-->
+
+  </body>
+
+</html>
